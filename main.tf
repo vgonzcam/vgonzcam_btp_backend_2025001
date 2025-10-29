@@ -30,7 +30,7 @@ resource "btp_subaccount" "create_subaccount_json" {
 output "subaccounts_created" {
   description = "IDs de las subaccounts creadas"
   value = {
-    for key, subaccount in btp_subaccount.create_subaccount :
+    for key, subaccount in btp_subaccount.create_subaccount_json :
     key => {
       id        = subaccount.id
       name      = subaccount.name
@@ -42,5 +42,5 @@ output "subaccounts_created" {
 
 output "subaccounts_list" {
   description = "Lista de nombres de subaccounts"
-  value       = [for sa in btp_subaccount.create_subaccount : sa.name]
+  value       = [for sa in btp_subaccount.create_subaccount_json : sa.name]
 }
