@@ -1,0 +1,42 @@
+{
+  "subaccounts": {
+    "hcl-001-cor-shd-abap-dev-ap21-jkey": {
+      "name": "hcl-001-cor-shd-abap-dev-ap21",
+      "region": "ap21",
+      "subdomain": "hcl-001-cor-shd-abap-dev-ap21",
+      "beta_enabled": true,
+      "description": "Company APPsEnterprises Subacount Import",
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["shd"],
+        "subbu": ["shd"],
+        "app": ["abap"],
+        "env": ["dev"],
+        "infra-managed-by": ["terraform"],
+        "purpose": ["atc"]
+      },
+      "parent_name": null,
+      "usage": null,
+      "env": "dev"
+    },
+    "hcl-001-cor-shd-abap-dev-us10-jkey": {
+      "name": "hcl-001-cor-shd-abap-dev-us10",
+      "region": "us10",
+      "subdomain": "hcl-001-cor-shd-abap-dev-us10",
+      "beta_enabled": true,
+      "description": "Company APPsEnterprises Subacount Import",
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["shd"],
+        "subbu": ["shd"],
+        "app": ["abap"],
+        "env": ["dev"],
+        "infra-managed-by": ["terraform"],
+        "purpose": ["atc"]
+      },
+      "parent_name": null,
+      "usage": null,
+      "env": "dev"
+    }
+  }
+}
