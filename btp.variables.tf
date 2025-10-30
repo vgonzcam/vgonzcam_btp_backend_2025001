@@ -10,7 +10,7 @@ variable "region" {
 
 variable "regionTest" {
   type        = string
-  description = "The region where the subaccount shall be created in."
+  description = "The region where the subaccount shall be created in. Al no tener valor por default da error sino esta en plataforma definida..."
 }
 
 
@@ -19,6 +19,7 @@ variable "btp_username" {
   description = "SAP BTP user name"
   ## set default value to "" when using environment values for user and password
   # default     = ""
+
 }
 
 variable "btp_password" {
@@ -49,5 +50,4 @@ variable "subaccounts" {
     type_of_subaccount = optional(string)
   }))
   description = "Mapa de subaccounts a crear"
-  default     = {}
 }
