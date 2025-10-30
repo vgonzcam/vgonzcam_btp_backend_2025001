@@ -1,0 +1,1 @@
+data "btp_regions" "btp_regions" {}

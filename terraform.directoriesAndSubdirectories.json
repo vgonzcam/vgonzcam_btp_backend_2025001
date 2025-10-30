@@ -1,0 +1,47 @@
+{
+  "mainDirectories": {
+    "hcl-001-cor-jkey": {
+      "name": "hcl-001-cor",
+      "description": "Company Corporate Main Directory",
+      "features": ["DEFAULT"],
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["cor"],
+        "bu-description": ["shared"],
+        "infra-managed-by": ["terraform"]
+      }
+    }
+  },
+  "subdirectories": {
+    "hcl-001-cor-shd-jkey": {
+      "name": "hcl-001-cor-shd",
+      "description": "Company Shared Subdirectory",
+      "features": ["DEFAULT"],
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["cor"],
+        "subbu": ["shd"],
+        "subbu-description": ["shared"],
+        "infra-managed-by": ["terraform"]
+      },
+      "parent_name": "hcl-001-cor-jkey"
+    }
+  },
+  "subdirectories-app": {
+    "hcl-001-cor-shd-abap-jkey": {
+      "name": "hcl-001-cor-shd-abap",
+      "description": "Company SAP BTP ABAP environment SubDirectory",
+      "features": ["DEFAULT", "ENTITLEMENTS", "AUTHORIZATIONS"],
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["cor"],
+        "subbu": ["shd"],
+        "app": ["abap"],
+        "purpose": ["abap", "atc"],
+        "app-description": ["abap-environment"],
+        "infra-managed-by": ["terraform"]
+      },
+      "parent_name": "hcl-001-cor-shd-jkey"
+    }
+  }
+}
