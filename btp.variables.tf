@@ -50,4 +50,5 @@ variable "subaccounts" {
     type_of_subaccount = optional(string)
   }))
   description = "Mapa de subaccounts a crear"
+  default = {}
 }
