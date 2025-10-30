@@ -15,7 +15,7 @@
         "infra-managed-by": ["terraform"],
         "purpose": ["atc"]
       },
-      "parent_name": "hcl-cor-shd-abap-jkey",
+      "parent_name": null,
       "usage": null,
       "env": "dev"
     },
@@ -34,7 +34,26 @@
         "infra-managed-by": ["terraform"],
         "purpose": ["atc"]
       },
-      "parent_name": "hcl-cor-shd-abap-jkey",
+      "parent_name": null,
+      "usage": null,
+      "env": "dev"
+    },
+    "hcl-cor-shd-test-dev-us10-jkey": {
+      "name": "hcl-cor-shd-test-dev-us10",
+      "region": "us10",
+      "subdomain": "hcl-cor-shd-test-dev-us10",
+      "beta_enabled": true,
+      "description": "Company APPsEnterprises Subacount Import",
+      "labels": {
+        "company": ["hcl"],
+        "bu": ["shd"],
+        "subbu": ["shd"],
+        "app": ["test"],
+        "env": ["dev"],
+        "infra-managed-by": ["terraform"],
+        "purpose": ["atc"]
+      },
+      "parent_name": null,
       "usage": null,
       "env": "dev"
     }
