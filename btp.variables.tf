@@ -8,6 +8,12 @@ variable "region" {
   default     = "us10"
 }
 
+variable "regionTest" {
+  type        = string
+  description = "The region where the subaccount shall be created in."
+}
+
+
 variable "btp_username" {
   type        = string
   description = "SAP BTP user name"
